@@ -1,0 +1,39 @@
+<!-- <div id="mySidebar" class="paddingNavbarClass">
+  <ul class="navbarUlClass">
+      <li>
+        <button class="btn btn-danger" (click)="closeNav()">X</button>
+      </li>
+      <li style="margin-left: 45px; color:#fff">
+        <h2 style="padding-left: 20px;">Rahul</h2>
+        <img class="img-circle" src="../../assets/impImages/faces/face-3.jpg"/>
+      </li>
+      <br/>
+      <li *ngFor="let menuItem of menuItems">
+        <a routerLinkActive="active" 
+           [routerLink]="[menuItem.path]">
+          <i class="{{menuItem.icon}}"></i>
+          <p style="font-size: 20px;font-weight: bold;">{{menuItem.title}}</p>
+        </a>
+      </li>
+  </ul>
+</div> -->
+<div id="mySidebar" class="sidebar">
+  <!-- <a>About</a>
+  <a>Services</a>
+  <a>Clients</a>
+  <a>Contact</a> -->
+  <ul>
+      <li style="margin-left: 45px; color:#fff">
+        <h2 style="padding-left: 20px;">Rahul</h2>
+        <img class="img-circle" src="../../assets/impImages/faces/face-3.jpg"/>
+      </li>
+      <br/>
+      <li *ngFor="let menuItem of menuItems">
+        <a routerLinkActive="active" 
+           [routerLink]="[menuItem.path]">
+          <i class="{{menuItem.icon}}"></i>
+          <p style="font-size: 20px;font-weight: bold;">{{menuItem.title}}</p>
+        </a>
+      </li>
+  </ul>
+</div>

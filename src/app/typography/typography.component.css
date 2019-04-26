@@ -1,0 +1,160 @@
+.followProfileHeight {
+	height: 250px;
+}
+
+.commentsProfileHeight {
+	height: 100px;
+	background-color: #4caf50!important;
+}
+
+.commentsProfileHeight.OragneColor {
+	background-color: #ff9800!important;
+
+}
+
+.designProfileHeight {
+	height: 75px;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.percentProfileHeight {
+	height: 130px;
+}
+
+.doubleProfileHeight {
+	height: 100px;
+}
+
+.tripleProfileHeight {
+	height: 200px;
+}
+
+/*.h5Color {
+	background-color: red	;
+}*/
+
+.followProfileHeight p {
+	font-size: 25px;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.followProfileHeight span {
+    color: #000!important;
+}
+
+.boderleftline {
+	border-left: 1px solid rgba(162,162,162,.32);
+}
+
+.bg-gradient-warning {
+	background-image: linear-gradient(135deg,#fdd835 0,#ff9800 100%);
+	padding-bottom: 10px!important;
+}
+
+.bg-gradient-warning-success {
+	background-image: linear-gradient(135deg,#cddc39 0,#4caf50 100%);
+	padding-bottom: 10px!important;
+}
+
+	/*.followProfileHeight h3 span{
+		background-color: red;
+	}*/
+
+/*.textRedColor{
+	background-color: red;
+}*/
+
+.imgMargin {
+	margin-left: 10px;
+}
+
+.imgCount {
+	width: 32px!important;
+    height: 32px!important;
+	color: #fff;
+	text-align: center!important;
+	background-color: #607d8b;
+}
+
+.bg-gradient-info {
+    background-image: linear-gradient(135deg,#009688 0,#42a5f5 100%);
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(135deg,#673ab7 0,#2196f3 100%);
+}
+
+.commentsProfileHeight p {
+	font-size: 25px;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.color-indigo-400 {
+    color: #5c6bc0;
+}
+
+.color-blue-400 {
+    color: #42a5f5;
+}
+
+.color-red-400 {
+    color: #ef5350;
+}
+
+.color-red-400-background {
+	background-color: #ef5350;
+}
+
+.color-blue-400-background {
+	background-color: #42a5f5;
+}
+
+.color-red-500-background {
+	background-color: #e2f542;
+}
+
+.color-red-600-background {
+	background-color: #f1c6d0;
+}
+
+.bg-gradient-success {
+    background-image: linear-gradient(135deg,#cddc39 0,#4caf50 100%);
+}
+
+.followProfileHeight h2{
+	font-size: 100px;
+	text-align: center;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.followProfileHeight h3{
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.followProfileHeight h4{
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #59676b;
+}
+
+.h2Color {
+	color: #4caf50!important;
+}
+
+.h3Color {
+	color: #1e88e5!important;
+}
+
+.bg-gradient-primary-new {
+    background-image: linear-gradient(135deg,#b73a3a 0,#f021f3 100%);
+}

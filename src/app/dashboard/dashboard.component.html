@@ -1,0 +1,265 @@
+<div style="padding-top:60px;" id="main">
+  <div class="container-fluid">
+  	<h2>My Dashboard</h2>
+  	<p>Welcome back to your sweet dashboard.</p>
+  	<div class="row">
+  		<div class="col-sm-6">
+  			<div class="col-sm-3">
+  				<button class="btn btn-primary messagebutton">14 Messages</button>
+  			</div>
+  			<div class="col-sm-3">
+  				<button class="btn btn-primary viewButton">View Requests</button>
+  			</div>
+  		</div>
+  		<div class="col-sm-6 well followMargin">
+  			<div class="row">
+                <div class="col-sm-8">
+                  <h5>Arlene Marshall</h5>
+                  <h4><span class="h5Color">@marshall</span></h4>
+                  <button class="btn btn-warning">Follow</button>
+                </div>
+                <div class="col-sm-4">
+                  <img class="img-circle" src="../../assets/impImages/faces/face-5.jpg"/>
+                </div>
+            </div>
+  		</div>
+  	</div>
+  	<br>
+  	<div class="row">
+  		<div class="col-sm-9">
+  			<div class="row">
+		  		<div class="col-sm-4">
+				  	<div class="well well-sm wellSmHeight">
+					    <h6>Running tasks</h6>
+					    <h4>270</h4>
+					    <canvas width="100" height="50" style="display: inline-block; width: 100px; height: 50px; vertical-align: top;" baseChart [datasets]="lineChartData"
+								    [labels]="lineChartLabels"
+								    [colors]="lineChartColors"
+								    [legend]="lineChartLegend"
+								    [chartType]="lineChartType"
+								    [plugins]="lineChartPlugins"></canvas>
+					</div>
+		  		</div>
+		  		<div class="col-sm-4">
+				  	<div class="well well-sm wellSmHeight">
+					    <h6>Commits</h6>
+					    <h4>8,345</h4>
+					    <canvas width="100" height="50" style="display: inline-block; width: 100px; height: 50px; vertical-align: top;" baseChart [datasets]="lineChartData"
+								    [labels]="lineChartLabels"
+								    [colors]="lineChartColors"
+								    [legend]="lineChartLegend"
+								    [chartType]="lineChartType"
+								    [plugins]="lineChartPlugins"></canvas>
+					</div>
+		  		</div>
+		  		<div class="col-sm-4">
+				  	<div class="well well-sm wellSmHeight">
+					    <h6>Pull requests</h6>
+					    <h4>559</h4>
+					    <canvas width="100" height="50" style="display: inline-block; width: 100px; height: 50px; vertical-align: top;" baseChart [datasets]="lineChartData"
+								    [labels]="lineChartLabels"
+								    [colors]="lineChartColors"
+								    [legend]="lineChartLegend"
+								    [chartType]="lineChartType"
+								    [plugins]="lineChartPlugins"></canvas>
+					</div>
+		  		</div>
+  			</div>
+  			<div class="row">
+		  		<div class="col-sm-12">
+				  	<div class="well well-lg wellLgHeight">
+				  		<div class="row">
+				  			<div class="col-sm-8">
+				  				<h4>Overview of sales progress</h4>
+				  				<p>Relevance per month of the current year</p>
+				  				<div style="display: block;">
+								  <canvas baseChart width="400" height="300"
+								    [datasets]="lineChartData"
+								    [labels]="lineChartLabels"
+								    [colors]="lineChartColors"
+								    [legend]="lineChartLegend"
+								    [chartType]="lineChartType"
+								    [plugins]="lineChartPlugins">
+								  </canvas>
+								</div>
+				  			</div>
+				  			<div class="col-sm-4">
+				  				<select class="selectWidth form-control">
+				  					<option>Last Perioid</option>
+				  					<option>Last Month</option>
+				  					<option>Last Year</option>
+				  					<option>01.01.2017 - 01.01.2016</option>
+				  				</select>
+				  			</div>
+				  		</div>
+					    
+					</div>
+		  		</div>
+  			</div>
+  			<div class="row">
+		  		<div class="col-sm-12">
+				  	<div class="well well-lg wellLgHeight">
+					    <table class="table">
+					    	<thead>
+					    		<tr>
+					    			<th>Assignments</th>
+					    			<th>Lead</th>
+					    			<th>Evolution</th>
+					    			<th>No. Tasks</th>
+					    			<th>Status</th>
+					    		</tr>
+					    	</thead>
+					    	<tbody>
+					    		<tr>
+					    			<td>
+					    				<h5>Hendrerit. </h5>
+										<p>Sed porta fermentum felis in molestie.<p>
+					    			</td>
+					    			<td>
+					    				<img src="../../assets/impImages/faces/face-3.jpg" width="50px" height="30px" class="img-circle imgPaddingTop"/>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">High</p>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">25/50</p>
+					    			</td>
+					    			<td>
+					    				<p class="inprogressMargin badge badge-info">In progress</p>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td>
+					    				<h5>Hendrerit. </h5>
+										<p>Sed porta fermentum felis in molestie.<p>
+					    			</td>
+					    			<td>
+					    				<img src="../../assets/impImages/faces/face-4.jpg" width="50px" height="30px" class="img-circle imgPaddingTop"/>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">High</p>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">25/50</p>
+					    			</td>
+					    			<td>
+					    				<p class="completeMargin badge badge-info">Completed</p>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td>
+					    				<h5>Hendrerit. </h5>
+										<p>Sed porta fermentum felis in molestie.<p>
+					    			</td>
+					    			<td>
+					    				<img src="../../assets/impImages/faces/face-6.jpg" width="50px" height="30px" class="img-circle imgPaddingTop"/>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">High</p>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">25/50</p>
+					    			</td>
+					    			<td>
+					    				<p class="inprogressMargin badge badge-info">In progress</p>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td>
+					    				<h5>Hendrerit. </h5>
+										<p>Sed porta fermentum felis in molestie.<p>
+					    			</td>
+					    			<td>
+					    				<img src="../../assets/impImages/faces/face-7.jpg" width="50px" height="30px" class="img-circle imgPaddingTop"/>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">High</p>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">25/50</p>
+					    			</td>
+					    			<td>
+					    				<p class="canceledMargin badge badge-info">Canceled</p>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td>
+					    				<h5>Hendrerit. </h5>
+										<p>Sed porta fermentum felis in molestie.<p>
+					    			</td>
+					    			<td>
+					    				<img src="../../assets/impImages/faces/face-2.jpg" width="50px" height="30px" class="img-circle imgPaddingTop"/>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">High</p>
+					    			</td>
+					    			<td>
+					    				<p class="textPaddingTop">25/50</p>
+					    			</td>
+					    			<td>
+					    				<p class="inprogressMargin badge badge-info">In progress</p>
+					    			</td>
+					    		</tr>
+					    	</tbody>
+					    </table>
+					</div>
+		  		</div>
+  			</div>
+  			<div class="row">
+		  		<div class="col-sm-12">
+				  	<div class="well well-lg contentMapHeight">
+					    <img src="../../assets/img/holiday-tour-packages-for-usa.jpg" width="670px" height="280px" />
+					</div>
+		  		</div>
+  			</div>
+  		</div>
+  		<div class="col-sm-3">
+  			<div class="row">
+  				<div class="col-sm-12 well well-lg wellHeight1">
+				  	<h4>Monthly performance</h4>
+				  	<div style="display: block;">
+					  <canvas baseChart height="300"
+					    [datasets]="barChartData"
+					    [labels]="barChartLabels"
+					    [options]="barChartOptions"
+					    [plugins]="barChartPlugins"
+					    [legend]="barChartLegend"
+					    [chartType]="barChartType">
+					  </canvas>
+					   <canvas baseChart  width="100" height="100"
+						    [data]="doughnutChartData"
+						    [labels]="doughnutChartLabels"
+						    [chartType]="doughnutChartType">
+						</canvas>
+					</div>
+		  		</div>
+		  		<div class="col-sm-12 well well-lg wellHeight1">
+			  		<div style="display: block;">
+			  		  <h4>System usage</h4>
+					  <canvas baseChart width="100" height="200" 
+					    [data]="pieChartData" 
+					    [labels]="pieChartLabels" 
+					    [chartType]="pieChartType"
+					    [options]="pieChartOptions"
+					    [plugins]="pieChartPlugins"
+					    [legend]="pieChartLegend">
+					  </canvas>
+					</div>
+				</div>
+		  		<div class="col-sm-12 well well-lg wellHeight2">
+				  	<h4>PR/Commits per version</h4>
+					<p>Curabitur diam mi, ultricies eget porttitor at, suscipit nec metus.</p>
+					<div style="display: block;">
+					  <canvas baseChart width="100" height="100"
+					    [datasets]="radarChartData"
+					    [options]="radarChartOptions"
+					    [labels]="radarChartLabels"
+					    [chartType]="radarChartType">
+					  </canvas>
+					</div>
+		  		</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</div>

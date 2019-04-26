@@ -1,0 +1,113 @@
+<div class="container text-center">
+	<div class="well well-lg wellColor">
+		<div class="row">
+			<form novalidate [formGroup]="myform" (ngSubmit)="signup()" #form="ngForm">
+				<div class="form-group">
+					<label class="text-center SignUPText">
+						Welcome to Signup Page
+					</label>
+				</div>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': first_name.invalid && (first_name.dirty || first_name.touched),
+			        'has-success': first_name.valid && (first_name.dirty || first_name.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="first_name">First Name : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" formControlName="first_name" name="first_name" id="first_name" placeholder="Enter your first name" [(ngModel)]="model.firstName" required />
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('first_name').hasError('required') && form.submitted">First Name is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': last_name.invalid && (last_name.dirty || last_name.touched),
+			        'has-success': last_name.valid && (last_name.dirty || last_name.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="last_name">Last Name : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" formControlName="last_name" name="last_name" id="last_name" placeholder="Enter your last name" [(ngModel)]="model.lastName" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('last_name').hasError('required') && form.submitted">Last Name is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': user_email.invalid && (user_email.dirty || user_email.touched),
+			        'has-success': last_name.valid && (user_email.dirty || user_email.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="user_email">Email : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="email" class="form-control" formControlName="user_email" name="user_email" id="user_email" placeholder="Enter your user email" [(ngModel)]="model.userName" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('user_email').hasError('required') && form.submitted">Email is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': user_phone.invalid && (user_phone.dirty || user_phone.touched),
+			        'has-success': user_phone.valid && (user_phone.dirty || user_email.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="user_phone">Phone No. : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" formControlName="user_phone" name="user_phone" id="user_phone" placeholder="Enter your phone no" [(ngModel)]="model.userPhone" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('user_phone').hasError('required') && form.submitted">Phone no is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': user_password.invalid && (user_password.dirty || user_password.touched),
+			        'has-success': user_password.valid && (user_password.dirty || user_password.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="user_password">Password : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="password" class="form-control" formControlName="user_password" name="user_password" id="user_password" placeholder="Enter your Password" [(ngModel)]="model.password" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('user_password').hasError('required') && form.submitted">Password is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': verify_password.invalid && (verify_password.dirty || verify_password.touched),
+			        'has-success': verify_password.valid && (verify_password.dirty || verify_password.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="verify_password">Verify Password : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="password" class="form-control" formControlName="verify_password" name="verify_password" id="verify_password" placeholder="ReEnter your Password" [(ngModel)]="model.verifyPassword" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('verify_password').hasError('required') && form.submitted">Verify Password is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<div class="col-sm-6">
+		                     <button class="btn btn-lg btn-success signupButtonClass" type="submit"><i class="glyphicon glyphicon-ok-sign" style="padding-right: 10px;"></i>Sign Up</button>
+						</div>
+						<div class="col-sm-6">
+							<button class="btn btn-lg signupButtonClass" type="reset" style="margin-left:10px;" (click)="fnResetUserForm()"><i class="glyphicon glyphicon-repeat" style="padding-right: 10px;"></i>Reset</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

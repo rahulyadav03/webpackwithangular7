@@ -1,0 +1,10 @@
+<div style="padding-top:60px;" id="main">
+  <h2>This is my home</h2>
+  <h2 *ngIf="!users">Loading..........</h2>
+  <ul *ngIf="users">
+    <li *ngFor="let user of users.data">
+      <img [src]="user.avatar">
+      <p>{{ user.first_name }} {{ user.last_name }}</p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,57 @@
+<div class="container text-center loginPage">
+	<div class="well well-lg wellLoginColor">
+		<div class="row">
+			<form novalidate [formGroup]="myform" (ngSubmit)="login()" #form="ngForm">	 
+				<div class="form-group">
+					<label class="text-center loginText">
+						Welcome to Login Page
+					</label>
+				</div>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': user_name.invalid && (user_name.dirty || user_name.touched),
+			        'has-success': user_name.valid && (user_name.dirty || user_name.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="user_name">User Name : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="email" class="form-control marginInputClass" formControlName="user_name" name="user_name" id="user_name" placeholder="Enter your user name" [(ngModel)]="model.userName" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('user_name').hasError('required') && form.submitted">User Name is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group" [ngClass]="{
+			        'has-danger': user_password.invalid && (user_password.dirty || user_password.touched),
+			        'has-success': user_password.valid && (user_password.dirty || user_password.touched)
+			      }">
+					<div class="col-sm-12">
+						<div class="col-sm-4">
+							<label for="user_password">Password : </label>
+						</div>
+						<div class="col-sm-8">
+							<input type="password" class="form-control marginInputClass" formControlName="user_password" name="user_password" id="user_password" placeholder="Enter your Password" [(ngModel)]="model.password" required/>
+						</div>
+					</div>
+					<p class="required" *ngIf="myform.get('user_password').hasError('required') && form.submitted">Password is required</p>
+				</div>
+				<br><br><br>
+				<div class="form-group">
+					<div class="col-sm-12">
+		                <button class="btn btn-lg btn-success loginButtonClass" type="submit"><i class="glyphicon glyphicon-ok-sign"></i>Authenticate</button>
+					</div>
+					<div class="col-sm-12 forgotMarginClass">
+						<a (click)="fnForgotPassword()">Forgot Password?</a>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-12 registerClass">
+						No account yet?<a (click)="fnGoToSignUp()">Register Now</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

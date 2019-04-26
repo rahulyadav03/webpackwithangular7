@@ -1,0 +1,15 @@
+<div style="padding-top:60px;" id="main">
+  <!-- <h2>This is Parent</h2>
+  <div class="col-sm-12">
+    <childTesting-app (valueChange)='displayCounter($event)'></childTesting-app>
+  </div> -->
+
+	<h3>Parent Component</h3>
+
+	<label>Bitcoin price</label>
+	<input type="text"  #pcomponent (keyup)="0"/>
+
+	<p>Value of child component is: {{ CData }}</p>
+
+	<childTesting-app [PData]="pcomponent.value" (childEvent)="CData=$event"></childTesting-app>
+</div>
